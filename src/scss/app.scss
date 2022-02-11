@@ -1,0 +1,167 @@
+@import 'imports';
+
+.header {
+    position: absolute;
+    background-color: transparent;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    z-index: 12;
+
+    ul {
+        list-style: none;
+        display: flex;
+
+        li {
+            padding-left: 16px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #000;
+            display: inline-block;
+            padding: 12px 1px;
+        }
+
+        .header__cta_1 {
+            display: block;
+            background: #00f;
+            text-align: center;
+            border-radius: 4px;
+            font-size: 14px;
+            color: white;
+            padding: 11px 16px 13px;
+        }
+
+        .header__cta_2 {
+            color: #000;
+            border: 1px solid rgba(192,204,228,.5);
+            padding: 10px 15px 12px;
+            display: block;
+            text-align: center;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+
+    &__video {
+        width: 55%;
+
+        video {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            -o-object-fit: cover;
+            object-fit: cover;
+            pointer-events: none;
+            left: 10%;
+            /* margin-left: 50%; */
+            width: 50vw;
+        }
+    }
+
+    &__info {
+        width: 45%;
+    }
+}
+
+.video__wrapper{
+    position: relative;
+    // width: 55%;
+    min-height: 100vh;
+    max-height: none;
+}
+
+.container {
+    position: relative;
+}
+
+h1 {
+    color: #000;
+    margin: 0 0 20px;
+    font-weight: 500;
+    font-size: 39px;
+    line-height: 112.82051%;
+    letter-spacing: -.02rem;
+}
+
+p{
+    margin: 0 0 12px;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: .003rem;
+}
+
+.span-submit {
+    color: #00f;
+    display: block;
+    margin-top: 35px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: -.003rem;
+}
+
+label {
+    display: none;
+}
+
+.sr-only  {
+    display: none;
+}
+
+form {
+    display: flex;
+    align-items: baseline;
+
+    button {
+        color: #fff;
+        width: 100%;
+        height: 64px;
+        border: none;
+        display: block;
+        padding: 24px 20px;
+        text-align: center;
+        background: #00f;
+        font-weight: 500;
+        border-radius: 0 0 2px 2px;
+        font-size: 16px;
+        line-height: 1;
+        letter-spacing: -.01rem;
+    }
+}
+
+.btn-features {
+    color: #00f;
+    display: block;
+    margin-top: 35px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: -.003rem;
+}
+
+input {
+    color: #34374c;
+    width: 100%;
+    // height: 64px;
+    border: 1px solid #c0cce4;
+    display: block;
+    padding: 22px 20px;
+    background: #fff;
+    font-weight: 500;
+    border-radius: 2px 2px 0 0;
+    -webkit-appearance: textfield;
+}
